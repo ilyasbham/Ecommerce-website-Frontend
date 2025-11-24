@@ -1,20 +1,47 @@
+// import React, { Fragment, useEffect, useState } from "react";
+// import MetaData from "../layout/MetaData";
+// import { Link, useParams, useNavigate } from "react-router-dom";
+// import { Typography } from "@mui/material";
+// import SideBar from "./Sidebar";
+// import {
+//   getOrderDetails,
+//   clearErrors,
+//   updateOrder,
+// } from "../../actions/orderAction";
+// import { useSelector, useDispatch } from "react-redux";
+// import Loader from "../layout/Loader/Loader";
+// import { toast } from "react-toastify";
+// import AccountTreeIcon from "@mui/icons-material/AccountTree";
+// import { Button } from "@mui/material";
+// import { UPDATE_ORDER_RESET } from "../../constants/orderConstants";
+// import "./processOrder.css";
+
 import React, { Fragment, useEffect, useState } from "react";
-import MetaData from "../layout/MetaData";
+import { useSelector, useDispatch } from "react-redux";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import { Typography } from "@material-ui/core";
+import { toast } from "react-toastify";
+
+// Material-UI v4
+import { Typography, Button } from "@mui/material";
+import AccountTreeIcon from "@mui/icons-material/AccountTree";
+
+// Project components
+import MetaData from "../layout/MetaData";
 import SideBar from "./Sidebar";
+import Loader from "../layout/Loader/Loader";
+
+// Redux actions & constants
 import {
   getOrderDetails,
   clearErrors,
   updateOrder,
 } from "../../actions/orderAction";
-import { useSelector, useDispatch } from "react-redux";
-import Loader from "../layout/Loader/Loader";
-import { toast } from "react-toastify";
-import AccountTreeIcon from "@material-ui/icons/AccountTree";
-import { Button } from "@material-ui/core";
 import { UPDATE_ORDER_RESET } from "../../constants/orderConstants";
+
+// Styles
 import "./processOrder.css";
+
+
 
 const ProcessOrder = () => {
   const { id } = useParams();

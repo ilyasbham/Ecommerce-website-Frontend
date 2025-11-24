@@ -1,6 +1,33 @@
-import React, { Fragment, useEffect } from "react";
-import { DataGrid } from "@material-ui/data-grid";
+// import React, { Fragment, useEffect } from "react";
+// import { DataGrid } from "@mui/x-data-grid";
 
+// import "./productList.css";
+// import { useSelector, useDispatch } from "react-redux";
+
+// import {
+//   clearErrors,
+//   getAdminProduct,
+//   deleteProduct,
+// } from "../../actions/productAction";
+
+// import { Link } from "react-router-dom";
+// import { Button } from "@mui/material";
+// import MetaData from "../layout/MetaData";
+
+// import EditIcon from "@mui/icons-material/Edit";
+// import DeleteIcon from "@mui/icons-material/Delete";
+
+// import SideBar from "./Sidebar";
+// import { DELETE_PRODUCT_RESET } from "../../constants/productConstants";
+
+// // Toastify
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
+
+
+
+import React, { Fragment, useEffect } from "react";
+import { DataGrid } from "@mui/x-data-grid"; // v4 compatible
 import "./productList.css";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -10,12 +37,12 @@ import {
   deleteProduct,
 } from "../../actions/productAction";
 
-import { Link, useNavigate } from "react-router-dom";
-import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
+import { Button } from "@mui/material"; // v4
 import MetaData from "../layout/MetaData";
 
-import EditIcon from "@mui/icons-material/Edit";
-import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit"; // v4
+import DeleteIcon from "@mui/icons-material/Delete"; // v4
 
 import SideBar from "./Sidebar";
 import { DELETE_PRODUCT_RESET } from "../../constants/productConstants";
@@ -24,9 +51,9 @@ import { DELETE_PRODUCT_RESET } from "../../constants/productConstants";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 const ProductList = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
 
   const { error, products } = useSelector((state) => state.products);
   const { error: deleteError, isDeleted } = useSelector(

@@ -1,15 +1,36 @@
+// import React, { Fragment, useState, useEffect } from "react";
+// import "./UpdateProfile.css";
+// import Loader from "../layout/Loader/Loader";
+// import MailOutlineIcon from "@mui/icons-material/MailOutline";
+// import FaceIcon from "@mui/icons-material/Face";
+// import { useDispatch, useSelector } from "react-redux";
+// import { clearErrors, updateProfile, loadUser } from "../../actions/userAction";
+// import { UPDATE_PROFILE_RESET } from "../../constants/userConstants";
+// import MetaData from "../layout/MetaData";
+// import { useNavigate } from "react-router-dom";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
+
+
 import React, { Fragment, useState, useEffect } from "react";
 import "./UpdateProfile.css";
 import Loader from "../layout/Loader/Loader";
+
+// Material-UI v4 icons
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import FaceIcon from "@mui/icons-material/Face";
+
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, updateProfile, loadUser } from "../../actions/userAction";
 import { UPDATE_PROFILE_RESET } from "../../constants/userConstants";
+
 import MetaData from "../layout/MetaData";
 import { useNavigate } from "react-router-dom";
+
+// Toastify
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 
 const UpdateProfile = () => {
   const dispatch = useDispatch();

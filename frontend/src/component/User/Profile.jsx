@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import "./Profile.css";
 import { useNavigate } from "react-router-dom";
 
+
+
 const Profile = () => {
   const navigate = useNavigate();
   const { user, loading, isAuthenticated } = useSelector((state) => state.user);

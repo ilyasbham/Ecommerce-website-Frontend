@@ -1,5 +1,26 @@
+// import React, { Fragment, useEffect, useState } from "react";
+// import { DataGrid } from "@mui/x-data-grid";
+// import "./productReviews.css";
+// import { useSelector, useDispatch } from "react-redux";
+// import {
+//   clearErrors,
+//   getAllReviews,
+//   deleteReviews,
+// } from "../../actions/productAction";
+// import { Button } from "@mui/material";
+// import DeleteIcon from "@mui/icons-material/Delete";
+// import Star from "@mui/icons-material/Star";
+
+// import MetaData from "../layout/MetaData";
+// import {toast} from 'react-toastify';
+// import { useNavigate } from "react-router-dom";
+// import SideBar from "./Sidebar";
+// import { DELETE_REVIEW_RESET } from "../../constants/productConstants";
+
+
+
 import React, { Fragment, useEffect, useState } from "react";
-import { DataGrid } from "@material-ui/data-grid";
+import { DataGrid } from "@mui/x-data-grid"; // v4 compatible
 import "./productReviews.css";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -7,12 +28,12 @@ import {
   getAllReviews,
   deleteReviews,
 } from "../../actions/productAction";
-import { Button } from "@mui/material";
-import DeleteIcon from "@mui/icons-material/Delete";
-import Star from "@mui/icons-material/Star";
+import { Button } from "@mui/material"; // v4
+import DeleteIcon from "@mui/icons-material/Delete"; // v4
+import StarIcon from "@mui/icons-material/Star"; // v4
 
 import MetaData from "../layout/MetaData";
-import {toast} from 'react-toastify';
+import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import SideBar from "./Sidebar";
 import { DELETE_REVIEW_RESET } from "../../constants/productConstants";

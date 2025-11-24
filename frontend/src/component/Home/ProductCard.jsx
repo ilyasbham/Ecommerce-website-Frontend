@@ -1,6 +1,11 @@
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import { Rating } from "@mui/material";
+
+
 import React from "react";
 import { Link } from "react-router-dom";
-import { Rating } from "@mui/material";
+import { Rating } from "@mui/lab"; // v4 compatible
 
 const ProductCard = ({ product }) => {
   const options = {

@@ -4,6 +4,8 @@ import { FaUserAlt, FaSearch, FaShoppingCart } from "react-icons/fa";
 import logo from "../../../images/logo.png";
 import "./Header.css";
 
+
+
 const Header = () => {
   return (
     <ReactNavbar

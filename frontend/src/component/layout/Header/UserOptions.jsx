@@ -1,7 +1,21 @@
-import "./Header.css"
-import { SpeedDial, SpeedDialAction } from "@mui/material";
+// import "./Header.css"
+// import { SpeedDial, SpeedDialAction } from "@mui/material";
+// import React, { Fragment, useState } from "react";
+// import Backdrop from "@mui/material/Backdrop";
+// import DashboardIcon from "@mui/icons-material/Dashboard";
+// import PersonIcon from "@mui/icons-material/Person";
+// import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+// import ListAltIcon from "@mui/icons-material/ListAlt";
+// import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+// import { useNavigate } from "react-router-dom";
+// import { logout } from "../../../actions/userAction.js";
+// import { useDispatch, useSelector } from "react-redux";
+// import { toast } from "react-toastify";
+
+import "./Header.css";
 import React, { Fragment, useState } from "react";
-import Backdrop from "@mui/material/Backdrop";
+import { SpeedDial, SpeedDialAction } from "@mui/lab"; // v4 lab package
+import Backdrop from "@mui/material/Backdrop"; // v4 core
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonIcon from "@mui/icons-material/Person";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
@@ -11,6 +25,7 @@ import { useNavigate } from "react-router-dom";
 import { logout } from "../../../actions/userAction.js";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
+
 
 
 

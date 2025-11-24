@@ -1,24 +1,54 @@
+// import React, { Fragment, useEffect, useState } from "react";
+// import { DataGrid } from "@mui/x-data-grid";
+// import "./productList.css";
+// import { useSelector, useDispatch } from "react-redux";
+// import { Link } from "react-router-dom";
+// import { Button, Snackbar } from "@mui/material";
+// import MuiAlert from "@mui/lab/Alert";
+// import MetaData from "../layout/MetaData";
+// import EditIcon from "@mui/icons-material/Edit";
+// import DeleteIcon from "@mui/icons-material/Delete";
+// import SideBar from "./Sidebar";
+// import { useNavigate } from "react-router-dom";
+// import {
+//   deleteOrder,
+//   getAllOrders,
+//   clearErrors,
+// } from "../../actions/orderAction";
+// import { DELETE_ORDER_RESET } from "../../constants/orderConstants";
+
+
 import React, { Fragment, useEffect, useState } from "react";
-import { DataGrid } from "@material-ui/data-grid";
+
+// MUI v4 DataGrid
+import { DataGrid } from "@mui/x-data-grid";
+
 import "./productList.css";
 import { useSelector, useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
-import { Button, Snackbar } from "@material-ui/core";
-import MuiAlert from "@material-ui/lab/Alert";
+import { Link, useNavigate } from "react-router-dom";
+
+// MUI v4 core components
+import { Button, Snackbar } from "@mui/material";
+
+// MUI v4 lab components
+import MuiAlert from "@mui/lab/Alert";
+
+// MUI v4 icons
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
+
+// Project components
 import MetaData from "../layout/MetaData";
-import EditIcon from "@material-ui/icons/Edit";
-import DeleteIcon from "@material-ui/icons/Delete";
 import SideBar from "./Sidebar";
-import { useNavigate } from "react-router-dom";
 
-
-
+// Redux actions & constants
 import {
   deleteOrder,
   getAllOrders,
   clearErrors,
 } from "../../actions/orderAction";
 import { DELETE_ORDER_RESET } from "../../constants/orderConstants";
+
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;

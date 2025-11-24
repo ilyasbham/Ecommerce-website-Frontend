@@ -1,7 +1,19 @@
+// import React, { Fragment, useEffect } from "react";
+// import { useSelector, useDispatch } from "react-redux";
+// import { Link, useParams } from "react-router-dom";
+// import { Typography } from "@mui/material";
+// import { toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
+
+// import MetaData from "../layout/MetaData";
+// import Loader from "../layout/Loader/Loader";
+// import { getOrderDetails, clearErrors } from "../../actions/orderAction";
+// import "./orderDetails.css";
+
 import React, { Fragment, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import { Typography } from "@mui/material";
+import { Typography } from "@mui/material"; // changed from @mui/material
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -9,6 +21,7 @@ import MetaData from "../layout/MetaData";
 import Loader from "../layout/Loader/Loader";
 import { getOrderDetails, clearErrors } from "../../actions/orderAction";
 import "./orderDetails.css";
+
 
 const OrderDetails = () => {
   const { id } = useParams(); // react-router v6

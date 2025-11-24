@@ -1,9 +1,25 @@
+// import React, { Fragment } from "react";
+// import "./Cart.css";
+// import CartItemCard from "./CartItemCard.jsx";
+// import { useSelector, useDispatch } from "react-redux";
+// import { addItemsToCart, removeItemsFromCart } from "../../actions/cartAction";
+// import { Typography } from "@mui/material";
+// import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
+// import { Link, useNavigate } from "react-router-dom";
+
+// // Toastify
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
+
+
 import React, { Fragment } from "react";
 import "./Cart.css";
 import CartItemCard from "./CartItemCard.jsx";
 import { useSelector, useDispatch } from "react-redux";
 import { addItemsToCart, removeItemsFromCart } from "../../actions/cartAction";
-import { Typography } from "@mui/material";
+
+// Material-UI v4
+import { Typography } from "@mui/material"; 
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
 import { Link, useNavigate } from "react-router-dom";
 

@@ -3,9 +3,8 @@ import CheckoutSteps from "./CheckoutSteps";
 import { useSelector } from "react-redux";
 import MetaData from "../layout/MetaData";
 import "./ConfirmOrder.css";
-import { Link } from "react-router-dom";
-import { Typography } from "@material-ui/core";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Typography } from "@mui/material";
 
 const ConfirmOrder = () => {
   const navigate = useNavigate();

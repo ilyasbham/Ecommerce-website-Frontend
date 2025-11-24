@@ -1,17 +1,40 @@
-import React, { Fragment, useEffect } from "react";
-import { DataGrid } from "@material-ui/data-grid";
+// import React, { Fragment, useEffect } from "react";
+// import { DataGrid } from "@mui/x-data-grid";
 
+// import "./productList.css";
+// import { useSelector, useDispatch } from "react-redux";
+// import { Link, useNavigate } from "react-router-dom";
+// import Button from "@mui/material/Button";
+// import MetaData from "../layout/MetaData";
+// import EditIcon from "@mui/icons-material/Edit";
+// import DeleteIcon from "@mui/icons-material/Delete";
+// import SideBar from "./Sidebar";
+// import { getAllUsers, clearErrors, deleteUser } from "../../actions/userAction";
+// import { DELETE_USER_RESET } from "../../constants/userConstants";
+// import { toast } from "react-toastify";
+
+
+import React, { Fragment, useEffect } from "react";
+import { DataGrid } from "@mui/x-data-grid"; // v4 DataGrid
 import "./productList.css";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import Button from "@mui/material/Button";
+
+import { Button } from "@mui/material"; // v4 Button
 import MetaData from "../layout/MetaData";
+
+// Icons (v4)
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
+
 import SideBar from "./Sidebar";
 import { getAllUsers, clearErrors, deleteUser } from "../../actions/userAction";
 import { DELETE_USER_RESET } from "../../constants/userConstants";
+
+// Toastify
 import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const UsersList = () => {
   const dispatch = useDispatch();

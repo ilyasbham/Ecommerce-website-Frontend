@@ -1,3 +1,23 @@
+// import React, { Fragment, useEffect, useState } from "react";
+// import { useSelector, useDispatch } from "react-redux";
+// import {
+//   clearErrors,
+//   updateProduct,
+//   getProductDetails,
+// } from "../../actions/productAction";
+
+// import { Button } from "@mui/material";
+// import MetaData from "../layout/MetaData";
+// import AccountTreeIcon from "@mui/icons-material/AccountTree";
+// import DescriptionIcon from "@mui/icons-material/Description";
+// import StorageIcon from "@mui/icons-material/Storage";
+// import SpellcheckIcon from "@mui/icons-material/Spellcheck";
+// import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+// import SideBar from "./Sidebar";
+// import { UPDATE_PRODUCT_RESET } from "../../constants/productConstants";
+// import { useNavigate, useParams } from "react-router-dom";
+// import { toast } from "react-toastify";
+
 import React, { Fragment, useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -6,17 +26,22 @@ import {
   getProductDetails,
 } from "../../actions/productAction";
 
-import { Button } from "@material-ui/core";
+import { Button } from "@mui/material"; // v4
 import MetaData from "../layout/MetaData";
-import AccountTreeIcon from "@material-ui/icons/AccountTree";
-import DescriptionIcon from "@material-ui/icons/Description";
-import StorageIcon from "@material-ui/icons/Storage";
-import SpellcheckIcon from "@material-ui/icons/Spellcheck";
-import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
+
+// Icons (v4)
+import AccountTreeIcon from "@mui/icons-material/AccountTree";
+import DescriptionIcon from "@mui/icons-material/Description";
+import StorageIcon from "@mui/icons-material/Storage";
+import SpellcheckIcon from "@mui/icons-material/Spellcheck";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+
 import SideBar from "./Sidebar";
 import { UPDATE_PRODUCT_RESET } from "../../constants/productConstants";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const UpdateProduct = () => {
   const dispatch = useDispatch();

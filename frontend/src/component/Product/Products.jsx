@@ -1,4 +1,18 @@
-import React, { Fragment,useState, useEffect } from "react";
+// import React, { Fragment,useState, useEffect } from "react";
+// import "./Products.css";
+// import { useSelector, useDispatch } from "react-redux";
+// import { clearErrors, getProduct } from "../../actions/productAction";
+// import Loader from "../layout/Loader/Loader.jsx";
+// import ProductCard from "../Home/ProductCard.jsx";
+// import { useParams } from "react-router-dom";
+// import Pagination from "react-js-pagination";
+// import Slider from "@mui/material/Slider";
+// import Typography from "@mui/material/Typography";
+// import MetaData from "../layout/MetaData.jsx";
+// import "react-toastify/dist/ReactToastify.css";
+// import { toast } from "react-toastify";
+
+import React, { Fragment, useState, useEffect } from "react";
 import "./Products.css";
 import { useSelector, useDispatch } from "react-redux";
 import { clearErrors, getProduct } from "../../actions/productAction";
@@ -6,8 +20,11 @@ import Loader from "../layout/Loader/Loader.jsx";
 import ProductCard from "../Home/ProductCard.jsx";
 import { useParams } from "react-router-dom";
 import Pagination from "react-js-pagination";
+
+// Material-UI v4 imports
 import Slider from "@mui/material/Slider";
 import Typography from "@mui/material/Typography";
+
 import MetaData from "../layout/MetaData.jsx";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";

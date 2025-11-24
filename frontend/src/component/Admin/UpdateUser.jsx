@@ -1,20 +1,50 @@
+// import React, { Fragment, useEffect, useState } from "react";
+// import { useSelector, useDispatch } from "react-redux";
+// import { useNavigate, useParams } from "react-router-dom";
+// import { toast } from "react-toastify";
+// import Button from "@mui/material/Button";
+// import MetaData from "../layout/MetaData";
+// import MailOutlineIcon from "@mui/icons-material/MailOutline";
+// import PersonIcon from "@mui/icons-material/Person";
+// import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
+// import SideBar from "./Sidebar";
+// import { UPDATE_USER_RESET } from "../../constants/userConstants";
+// import {
+//   getUserDetails,
+//   updateUser,
+//   clearErrors,
+// } from "../../actions/userAction";
+// import Loader from "../layout/Loader/Loader";
+
 import React, { Fragment, useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import Button from "@mui/material/Button";
+
+// ✅ MUI v4 Button
+import { Button } from "@mui/material";
+
+// Your components
 import MetaData from "../layout/MetaData";
+
+// ✅ MUI v4 Icons
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PersonIcon from "@mui/icons-material/Person";
 import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
+
 import SideBar from "./Sidebar";
+
 import { UPDATE_USER_RESET } from "../../constants/userConstants";
 import {
   getUserDetails,
   updateUser,
   clearErrors,
 } from "../../actions/userAction";
+
 import Loader from "../layout/Loader/Loader";
+
+
+
 
 const UpdateUser = () => {
   const dispatch = useDispatch();

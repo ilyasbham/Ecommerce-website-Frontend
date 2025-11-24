@@ -1,11 +1,27 @@
+// import React, { Fragment, useState, useEffect } from "react";
+// import "./ForgotPassword.css";
+// import Loader from "../layout/Loader/Loader";
+// import MailOutlineIcon from "@mui/icons-material/MailOutline";
+// import { useDispatch, useSelector } from "react-redux";
+// import { clearErrors, forgotPassword } from "../../actions/userAction";
+// import MetaData from "../layout/MetaData";
+// import { toast } from "react-toastify";
+
 import React, { Fragment, useState, useEffect } from "react";
 import "./ForgotPassword.css";
 import Loader from "../layout/Loader/Loader";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
+
+// Material-UI v4 icon
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, forgotPassword } from "../../actions/userAction";
 import MetaData from "../layout/MetaData";
+
+// Toastify
 import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const ForgotPassword = () => {
   const dispatch = useDispatch();

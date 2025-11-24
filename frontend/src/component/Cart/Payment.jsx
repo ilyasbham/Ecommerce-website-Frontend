@@ -1,8 +1,48 @@
+// import React, { Fragment, useEffect, useRef } from "react";
+// import CheckoutSteps from "./CheckoutSteps";
+// import { useSelector, useDispatch } from "react-redux";
+// import MetaData from "../layout/MetaData";
+// import { Typography } from "@mui/material";
+
+// import React, { Fragment, useEffect, useRef } from "react";
+// import { useSelector, useDispatch } from "react-redux";
+// import { Typography } from "@mui/material";
+
+// import CheckoutSteps from "./CheckoutSteps";
+// import MetaData from "../layout/MetaData";
+
+
+// import {
+//   CardNumberElement,
+//   CardCvcElement,
+//   CardExpiryElement,
+//   useStripe,
+//   useElements,
+// } from "@stripe/react-stripe-js";
+
+// import axios from "axios";
+// import "./payment.css";
+
+// import { FaCreditCard } from "react-icons/fa";
+// import { MdEvent } from "react-icons/md";
+// import { VscKey } from "react-icons/vsc";
+
+// import { createOrder, clearErrors } from "../../actions/orderAction";
+
+// // Toastify
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+// React Router v6 replace history
+import { useNavigate } from "react-router-dom";
+
+
 import React, { Fragment, useEffect, useRef } from "react";
-import CheckoutSteps from "./CheckoutSteps";
 import { useSelector, useDispatch } from "react-redux";
+import { Typography } from "@mui/material"; // v4 core
+
+import CheckoutSteps from "./CheckoutSteps";
 import MetaData from "../layout/MetaData";
-import { Typography } from "@material-ui/core";
 
 import {
   CardNumberElement,
@@ -15,18 +55,14 @@ import {
 import axios from "axios";
 import "./payment.css";
 
+// React Icons
 import { FaCreditCard } from "react-icons/fa";
 import { MdEvent } from "react-icons/md";
 import { VscKey } from "react-icons/vsc";
 
+// Redux actions
 import { createOrder, clearErrors } from "../../actions/orderAction";
 
-// Toastify
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-
-// React Router v6 replace history
-import { useNavigate } from "react-router-dom";
 
 const Payment = () => {
   const orderInfo = JSON.parse(sessionStorage.getItem("orderInfo"));

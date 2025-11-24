@@ -1,19 +1,43 @@
+// import React from "react";
+// import "./sidebar.css";
+// import logo from "../../images/logo.png";
+// import { Link } from "react-router-dom";
+// import PostAddIcon from "@mui/icons-material/PostAdd";
+// import AddIcon from "@mui/icons-material/Add";
+// import { TreeView, TreeItem } from "@mui/lab";
+// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+// import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+// import ImportExportIcon from "@mui/icons-material/ImportExport";
+// import ListAltIcon from "@mui/icons-material/ListAlt";
+// import DashboardIcon from "@mui/icons-material/Dashboard";
+// import PeopleIcon from "@mui/icons-material/People";
+// import RateReviewIcon from "@mui/icons-material/RateReview";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
+
 import React from "react";
 import "./sidebar.css";
 import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
+
+// Icons (v4)
 import PostAddIcon from "@mui/icons-material/PostAdd";
 import AddIcon from "@mui/icons-material/Add";
-import { TreeView, TreeItem } from "@material-ui/lab";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ImportExportIcon from "@mui/icons-material/ImportExport";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PeopleIcon from "@mui/icons-material/People";
 import RateReviewIcon from "@mui/icons-material/RateReview";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+
+// Lab components (v4)
+import { TreeView, TreeItem } from "@mui/lab";
+
+// Toastify
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 
 const Sidebar = () => {
   // Example toast alert
