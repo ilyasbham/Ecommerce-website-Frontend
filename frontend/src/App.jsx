@@ -248,7 +248,6 @@
 
 
 
-
 import React, { useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -291,7 +290,7 @@ import UsersList from "./component/Admin/UsersList.jsx";
 import UpdateUser from "./component/Admin/UpdateUser.jsx";
 import ProductReviews from "./component/Admin/ProductReviews.jsx";
 import Contact from "./component/layout/Contact/Contact.jsx";
-// import About from "./component/layout/About/About.jsx";
+import About from "./component/layout/About/About.jsx";
 import NotFound from "./component/layout/Not Found/NotFound.jsx";
 
 
@@ -314,38 +313,13 @@ function App() {
     getStripeApiKey();
   }, []);
 
-window.addEventListener('contextmenu', event => event.preventDefault());
-
-
   return (
     <Router>
       <Header />
       {isAuthenticated && <UserOptions user={user} />}
       <ToastContainer position="top-right" autoClose={2000} />
       <Routes>
-       
-
-
-        {/* Public Routes */}
-        <Route  path="/"                  element={<Home />} />
-        <Route  path="/product/:id"       element={<ProductDetails />} />
-        <Route  path="/products"          element={<Products />} />
-        <Route  path="/products/:keyword" element={<Products />} />
-        <Route  path="/search"            element={<Search />} />
-        <Route  path="/password/forgot"   element={<ForgotPassword />} />
-        <Route  path="/password/reset/:token" element={<ResetPassword />} />
-        <Route  path="/cart"              element={<Cart />} />
-        <Route  path="/login"             element={<LoginSignup />} />
-        <Route exact path="/contact" element={<Contact />} />
-        {/* <Route exact path="/about" element={<About />} /> */}
-        <Route path="*" element={<NotFound />} />
-
-
-
-
-
-
- {/* Protected Routes */}
+        {/* Protected Routes */}
         <Route
           path="/account"
           element={
@@ -505,6 +479,22 @@ window.addEventListener('contextmenu', event => event.preventDefault());
             </ProtectedRoute>
           }
         />
+
+
+        {/* Public Routes */}
+        <Route  path="/"                  element={<Home />} />
+        <Route  path="/product/:id"       element={<ProductDetails />} />
+        <Route  path="/products"          element={<Products />} />
+        <Route  path="/products/:keyword" element={<Products />} />
+        <Route  path="/search"            element={<Search />} />
+        <Route  path="/password/forgot"   element={<ForgotPassword />} />
+        <Route  path="/password/reset/:token" element={<ResetPassword />} />
+        <Route  path="/cart"              element={<Cart />} />
+        <Route  path="/login"             element={<LoginSignup />} />
+        <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+
       </Routes>
       <Footer />
     </Router>
